@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataViewSchemaOnTheFly", "DataViewSchemaOnTheFly\DataViewSchemaOnTheFly.csproj", "{57FFAD42-B027-4B29-A344-15EF991B9C09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModelsGenerator", "ModelsGenerator\DataModelsGenerator.csproj", "{8BA6B1B5-B56F-4BC9-A564-E224DE63670F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57FFAD42-B027-4B29-A344-15EF991B9C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FFAD42-B027-4B29-A344-15EF991B9C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FFAD42-B027-4B29-A344-15EF991B9C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FFAD42-B027-4B29-A344-15EF991B9C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA6B1B5-B56F-4BC9-A564-E224DE63670F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA6B1B5-B56F-4BC9-A564-E224DE63670F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA6B1B5-B56F-4BC9-A564-E224DE63670F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA6B1B5-B56F-4BC9-A564-E224DE63670F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8F80FD7-4580-40A4-804D-94E7250A5ABA}
+	EndGlobalSection
+EndGlobal
