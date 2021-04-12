@@ -18,7 +18,9 @@ namespace DataViewSchemaOnTheFly
                 Label = "FlashLight"
             };
 
-            var c = new Consumer();
+            
+            var c = new GeneratedConsumers.ConsoleConsumer();
+            c.Run();
 
             Console.WriteLine($"Temperature: {x.Temperature}");
             Console.WriteLine($"Luminosity: {x.Luminosity}");
