@@ -25,7 +25,7 @@ namespace DataModelsGenerator.Helpers
             return sb;
         }
 
-        public static StringBuilder ClassWrap(IEnumerable<Feature> features, string cn)
+        public static StringBuilder InputClassWrap(IEnumerable<Feature> features, string cn)
         {
             StringBuilder sb = new();
             sb.AppendLine($"{Tab}public class {cn}");
@@ -35,6 +35,21 @@ namespace DataModelsGenerator.Helpers
                 sb.AppendLine($"{Tab}{Tab}[LoadColumn({feature.Index})]");
                 sb.AppendLine($"{Tab}{Tab}public {feature.Type.Map()} {feature.Name} {{ get; set; }}");
             }
+            sb.AppendLine($"{Tab}}}");
+
+            return sb;
+        }
+
+        public static StringBuilder OutputClassWrap(string cn)
+        {
+            StringBuilder sb = new();
+            sb.AppendLine($"{Tab}public class {cn}");
+            sb.AppendLine($"{Tab}{{");
+
+            sb.AppendLine($@"{Tab}{Tab}[ColumnName(""PredictedLabel"")]");
+            sb.AppendLine($"{Tab}{Tab}public string Prediction {{ get; set; }}");
+            sb.AppendLine($"{Tab}{Tab}public float[] Score {{ get; set; }}");
+
             sb.AppendLine($"{Tab}}}");
 
             return sb;

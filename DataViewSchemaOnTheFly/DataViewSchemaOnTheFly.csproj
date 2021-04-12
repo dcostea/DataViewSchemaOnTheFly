@@ -8,15 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModelsGenerator\DataModelsGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />                    
+    <ProjectReference Include="..\DataModelsGenerator\DataModelsGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\ConsumersGenerator\ConsumersGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <AdditionalFiles Include="C:\Temp\Model.zip" />
   </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="1.5.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AdditionalFiles Include="C:\Temp\Model.zip" />
   </ItemGroup>  
   
 </Project>

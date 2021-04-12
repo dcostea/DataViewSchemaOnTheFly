@@ -1,5 +1,6 @@
 ﻿using System;
 using GeneratedDataModels;
+using GeneratedConsumers;
 
 namespace DataViewSchemaOnTheFly
 {
@@ -16,6 +17,8 @@ namespace DataViewSchemaOnTheFly
                 CreatedAt = "",
                 Label = "FlashLight"
             };
+
+            var c = new Consumer();
 
             Console.WriteLine($"Temperature: {x.Temperature}");
             Console.WriteLine($"Luminosity: {x.Luminosity}");
